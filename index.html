@@ -1,0 +1,80 @@
+<!Doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <script defer src="Js/countries.js"></script>
+    <script defer src="Js/App.js"></script>
+    
+    <title>Money Converter using JS+CSS+HTML</title>
+
+    <style>
+        
+        @keyframes wavy {
+            0%{text-shadow: 0 0 10px #2565b8;}
+            50%{text-shadow:0 0 25px #2565b8;}
+            100%{text-shadow:0 0  10px  #2565b8}
+        }
+        h1 {
+
+          font-size: 3em;
+            text-align: center;
+            color: rgb(255, 255, 255);
+            background-image: url('https://cdn.pixabay.com/photo/2019/03/27/09/01/world-4084556_1280.jpg');
+            background-position: center;
+            background-size: 70rcap;
+           
+            animation: wavy 3s infinite;
+           
+        }
+        
+    </style>
+</head>
+
+<body>
+
+
+    <div class="container">
+       
+   
+
+        <h1 >       MONEY CONVERTER</h1>
+        <div class="wrapper">
+            <form>
+                <div class="amount">
+                    <p>Amount</p>
+                    <input type="text" value="1">
+                </div>
+                <div class="convert_box">
+                    <div class="from">
+                        <p>from</p>
+                        <div class="select_input">
+                            <img src="https://flagcdn.com/48x36/in.png">
+                            <select>
+                                <option value="INR">INR</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="reverse"><i class="fas fa-exchange-alt"></i></div>
+                    <div class="to">
+                        <p>to</p>
+                        <div class="select_input">
+                            <img src="https://flagcdn.com/48x36/us.png">
+                            <select>
+                                <option value="USD">USD</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="result">Getting Exchange rate.............</div>
+                </div>
+
+            </form>
+            <button type="button"> Get Exchange Rate ........</button>
+        </div>
+    </div>
+</body>
+
+</html>
